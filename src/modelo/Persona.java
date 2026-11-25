@@ -27,7 +27,9 @@ public class Persona {
     //1)CONSTRUCTORES
     public Persona() {
     }
-
+     public Persona(String nombres) {
+          this.nombres = nombres;
+    }
     public Persona(int idPersona, String nombres, String apellidos, String cedula, String direccion, String telefono, String correoElectronico, String fechaNacimiento, String genero) {
         this.idPersona = idPersona;
         this.nombres = nombres;

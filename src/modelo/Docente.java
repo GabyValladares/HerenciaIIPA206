@@ -14,6 +14,7 @@ public class Docente extends PersonaPrivate {
     private String jornada;
 
     public Docente() {
+         super();
     }
 
     public Docente(int idDocente, String rol, String jornada) {
@@ -28,7 +29,17 @@ public class Docente extends PersonaPrivate {
         this.rol = rol;
         this.jornada = jornada;
     }
-
+    public Docente(int idDocente, int idPersona, String nombres, String apellidos, String cedula, String direccion, String telefono, String correoElectronico, String fechaNacimiento, String genero){
+        super(idPersona, nombres, apellidos, cedula, direccion, telefono,
+                correoElectronico, fechaNacimiento, genero);
+        this.idDocente=idDocente;
+        
+    }
+    public Docente(int idDocente, String nombres){
+        super();
+        this.idDocente=idDocente;
+        
+    }
     public int getIdDocente() {
         return idDocente;
     }
@@ -55,7 +66,15 @@ public class Docente extends PersonaPrivate {
 
     @Override
     public String toString() {
-        return "Docente{" + "idDocente=" + idDocente + ", rol=" + rol + ", jornada=" + jornada + '}';
+        return "---DATOS DE PERSONA---"+"\n"+
+                "Nombres:"+getNombres()+"\n"+
+                "Apellidos:"+getApellidos()+"\n"+
+                "Cédula:"+getCedula()+"\n"+
+                "Dirección:"+getDireccion()+"\n"+
+                "Teléfono:"+getTelefono()+"\n"+
+                "Correo Electrónico:"+getCorreoElectronico()+"\n"+
+                "Fecha de Nacimiento:"+getFechaNacimiento()+"\n"+
+                "Género:"+getGenero()+"idDocente=" + idDocente + ", rol=" + rol + ", jornada=" + jornada + '}';
     }
     
     public void calcularSueldo(){}

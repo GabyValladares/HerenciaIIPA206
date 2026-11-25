@@ -4,6 +4,8 @@
  */
 package vista;
 
+import javax.swing.JOptionPane;
+import modelo.Docente;
 import modelo.Estudiante;
 import modelo.Persona;
 import modelo.PersonaPrivate;
@@ -30,6 +32,30 @@ public class Main {
         Estudiante e=new Estudiante();
         e.setApellidos("Romo");
         e.imprimir();
+        //CLASE 24/11/2026
+     //creacion de objetos con ciclos repetitivos 
+//        Estudiante[] listaEstudiantes=new Estudiante[5];//LISTA ESTÁTICA TAMAÑO 5 DE CADENAS
+//        for (int i = 0; i < 5; i++) {            
+//           Estudiante ee=new Estudiante();
+//           ee.setNombres(JOptionPane.
+//                   showInputDialog("Ingrese sus nombres:"));
+//           ee.setApellidos(JOptionPane.
+//                   showInputDialog("Ingrese sus apellidos:"));
+//           ee.setFechaNacimiento(JOptionPane.
+//                   showInputDialog("Ingrese su fecha de Nacimiento (dd/mm/aaaa):"));
+//           listaEstudiantes[i]=ee;
+//        }
+          //DOCENTES
+          //1)UPCASTING
+                PersonaPrivate luis=new Docente();
+                luis.setNombres("Luis");
+                luis.setCedula("1002003001");
+                          
+
+            //2)DOWNCASTING
+                Docente dLuis=(Docente)luis;
+                System.out.println(dLuis.toString());
+        
         
     }
     
