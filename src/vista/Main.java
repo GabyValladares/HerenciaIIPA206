@@ -56,7 +56,9 @@ public class Main {
                 Docente dLuis=(Docente)luis;
                 System.out.println(dLuis.toString());
         
-        
+        Estudiante es=new Estudiante();
+        es.setNroMatricula("TSDSN2413226");
+        es.validarMatricula();
     }
     
 }

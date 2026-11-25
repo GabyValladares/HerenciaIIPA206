@@ -4,6 +4,8 @@
  */
 package modelo;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author hp
@@ -71,6 +73,15 @@ public class Estudiante extends PersonaPrivate{
     }
     
     //MÉTODO DE LÓGICA NEGOCIO
+    public void validarMatricula(){
+        String carrera=nroMatricula.substring(0,4);
+        if(carrera.equals(this.carrera)){
+            
+        
+        }
+        
+    
+    }
     
     
 }
