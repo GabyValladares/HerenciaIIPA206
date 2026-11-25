@@ -32,6 +32,45 @@ public class Estudiante extends PersonaPrivate{
         this.nivel = nivel;
         this.nroMatricula = nroMatricula;
     }
+
+    public int getIdEstudiante() {
+        return idEstudiante;
+    }
+
+    public void setIdEstudiante(int idEstudiante) {
+        this.idEstudiante = idEstudiante;
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public String getNroMatricula() {
+        return nroMatricula;
+    }
+
+    public void setNroMatricula(String nroMatricula) {
+        this.nroMatricula = nroMatricula;
+    }
+
+    @Override
+    public String toString() {
+        return "Estudiante{" + "idEstudiante=" + idEstudiante + ", carrera=" + carrera + ", nivel=" + nivel + ", nroMatricula=" + nroMatricula + '}';
+    }
+    
+    //MÉTODO DE LÓGICA NEGOCIO
     
     
 }
